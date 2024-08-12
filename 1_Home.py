@@ -24,7 +24,7 @@ st.button('TLDR', on_click=toggle_tldr, type='primary')
 # Exibir ou esconder o resumo com base no estado
 if st.session_state.show_tldr:
     tldr = """
-    <div style="background-color: #f0f0f0; padding: 10px; border-radius: 5px;">
+    <div style="background-color: #f0f0f0; padding: 10px; border-radius: 5px; color: #000000;">
         <b>- Nome:</b> Luis Gustavo Ribeiro Andrade.<br>
         <b>- Formação:</b> Conclusão do Ensino Médio na EPCAR (2019);<br>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Estudante de Economia na FGV EPGE (Conclusão em 2024).<br>
