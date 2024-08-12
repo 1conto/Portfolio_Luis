@@ -2,6 +2,8 @@ import streamlit as st
 import random as rd
 
 cores = ['#F0F8FF', '#F8F8FF', '#FFFAFA', '#FFF5EE', '#FFFAF0', '#F5F5F5', '#F5F5DC', '#FDF5E6', '#FFFFF0', '#FAF0E6', '#FFF8DC', '#FAEBD7', '#FFEBCD', '#FFE4C4', '#FFFACD', '#FAFAD2', '#FFEFD5', '#FFDAB9', '#FFE4B5', '#EEE8AA', '#FFE4E1', '#FFF0F5', '#E6E6FA', '#D8BFD8', '#F0FFFF', '#E0FFFF', '#E0FFFF', '#E0FFFF', '#F0FFF0', '#F5FFFA']
+i = 0
+
 
 st.set_page_config(page_title="Meus Projetos", page_icon=":briefcase:", layout="wide")
 
@@ -19,8 +21,9 @@ Você também pode me encontrar nas redes sociais:\n
 
 # Funções para criação
 def criar_card(titulo, descricao, link, cores):
-    i = rd.randint(0,len(cores))
+    global i
     cor_fundo = cores[i]
+    i = i+1
     card = f"""
     <div style="background-color: {cor_fundo}; padding: 15px; border-radius: 10px; margin: 10px 0;">
         <h3 style="color: #333333;">{titulo}</h3>
